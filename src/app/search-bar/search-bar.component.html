@@ -1,0 +1,10 @@
+<div class="box">
+	<form (submit)="onFormSubmit($event)">
+		<input
+			placeholder="Enter the keyword"
+			class="input"
+			#parseInput
+			(input)="term = parseInput.value"
+		/>
+	</form>
+</div>
